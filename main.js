@@ -1,7 +1,3 @@
-// https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FHalemoGPA%2FLearn-JS%2Fblob%2Fmain%2FREADME.md%3Ffbclid%3DIwAR0RzQIyKFHyjPh7HRmWbTZa9g2A_hm1Utz-ohgWiWhhXJl1kxAlaoTKrKY&h=AT0Rzf1oMty7Hzu4oH4jR2nWZ9w3rMLI0QoWl7ZzvS929ohjudCQ5BN8pj_CwKVE_slq4iNSpJI0nS0TQdTHVve3sT4seEQ40UzuXL8_DkXX9aVnhQI1F35_fnA-IpiJvaIR&__tn__=-UK-R&c[0]=AT0vn4wnDI6M_3XtjcB7MeoMyNNwf4ZIPq7HyNXeqHKkc-KzUuaQ95es6PXcsGvRq_420gRmVbRwUAE75JpnO9Hg3zsAwq0hR7fSQ5rf_Mqk5GKEoO8HWbbxl-JH2EuGXg8fIvHnYmrH5Jy6ZaCD0T8oOvAD5bde
-// the link above is to assinments of the JavaScript.
-// ------------------------------ ------------------------------ ------------------------------ ------------------------------
-"use strict";
 
 let myCanvas = document.getElementById("canvas");
 let myCanvasTx = myCanvas.getContext("2d");
