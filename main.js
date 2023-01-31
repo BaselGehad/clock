@@ -1,10 +1,14 @@
-
 let myCanvas = document.getElementById("canvas");
 let myCanvasTx = myCanvas.getContext("2d");
 let radius = myCanvas.width / 2;
 myCanvasTx.translate(radius, radius);
 radius = radius * 0.9;
 let mainColor = "#4B56D2";
+let welcomMsg = new SpeechSynthesisUtterance();
+welcomMsg.text = `Made with all love, by Basl Jihad`;
+setTimeout(() => {
+  window.speechSynthesis.speak(welcomMsg);
+}, 3000);
 setInterval(() => {
   drawClock();
 }, 1000);
@@ -13,6 +17,7 @@ function drawClock() {
   drawClockFace();
   numbers();
   hands();
+
   function drawClockFace() {
     let grad;
     myCanvasTx.beginPath();
@@ -35,7 +40,7 @@ function drawClock() {
     myCanvasTx.stroke();
     myCanvasTx.beginPath();
     myCanvasTx.arc(0, 0, radius * 0.05, 0, 2 * Math.PI);
-    myCanvasTx.fillStyle =mainColor;
+    myCanvasTx.fillStyle = mainColor;
     myCanvasTx.fill();
   }
   function numbers() {
@@ -93,6 +98,18 @@ function drawClock() {
       );
       myCanvasTx.lineWidth = 8;
       myCanvasTx.stroke();
+    }
+    let btn = document.getElementById("btn");
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = `It is ${hr} and ${min} minutes.`;
+    if ("speechSynthesis" in window) {
+      // Speech Synthesis supported 🎉
+      btn.onclick = function () {
+        window.speechSynthesis.speak(msg);
+      };
+    } else {
+      // Speech Synthesis Not Supported 😣
+      alert("Sorry, your browser doesn't support text to speech!");
     }
   }
 }
