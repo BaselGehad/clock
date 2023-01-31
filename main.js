@@ -5,7 +5,7 @@ myCanvasTx.translate(radius, radius);
 radius = radius * 0.9;
 let mainColor = "#4B56D2";
 let welcomMsg = new SpeechSynthesisUtterance();
-welcomMsg.text = `Made with all love, by Basl Jihad`;
+welcomMsg.text = `Made with all love, by Basel Jihad`;
 setTimeout(() => {
   window.speechSynthesis.speak(welcomMsg);
 }, 3000);
