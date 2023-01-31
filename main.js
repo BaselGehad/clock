@@ -4,14 +4,6 @@ let radius = myCanvas.width / 2;
 myCanvasTx.translate(radius, radius);
 radius = radius * 0.9;
 let mainColor = "#4B56D2";
-
-
-setTimeout(() => {
-let welcomMsg = new SpeechSynthesisUtterance();
-welcomMsg.lang = "en";
- welcomMsg.text = `Made with all love, by: Basel Jihad`;
-  window.speechSynthesis.speak(welcomMsg);
-}, 1000);
 setInterval(() => {
   drawClock();
 }, 1000);
