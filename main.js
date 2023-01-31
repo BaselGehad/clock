@@ -102,6 +102,7 @@ function drawClock() {
     let btn = document.getElementById("btn");
     var msg = new SpeechSynthesisUtterance();
     msg.text = `It is ${hr} and ${min} minutes.`;
+    msg.lang = 'en';
     if ("speechSynthesis" in window) {
       // Speech Synthesis supported 🎉
       btn.onclick = function () {
