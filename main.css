@@ -24,7 +24,7 @@ button {
     background-color: #4b56d2;
     border: none;
     width: 300px;
-    margin: 3rem;
+    margin: 1rem;
     letter-spacing: 2px;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -33,12 +33,6 @@ button {
     -o-border-radius: 2rem;
     outline: none;
     user-select: none;
-
-
-}
-div {
-    padding: 1rem;
-    margin: 1rem;
 }
 div p {
     color: white;
